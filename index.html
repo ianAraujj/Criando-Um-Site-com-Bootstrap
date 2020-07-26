@@ -8,29 +8,31 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <title>Olá, mundo!</title>
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row">
 
-            <div class="mt-3 mr-md-2">
+            <div class="mt-3 mr-md-5 ml-md-5 mb-lg-3">
                 <a class="mr-lg-3" href="#">
                     <img src="http://prestcontasonline.com.br/contabilidade/wp-content/uploads/2019/06/1559328423_1559328423contabilidadeparamicroX220.jpg"
                         width="270" height="60" alt="">
                 </a>
             </div>
 
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color:navajowhite">
+            <nav class="navbar navbar-expand-lg navbar-dark h5 mb-lg-0" style="background-color:rgb(221, 180, 47)">
 
 
                 <!-- Botão para alternar Visualização -->
@@ -43,29 +45,32 @@
 
                 <div class="collapse navbar-collapse" id="meuNavBar">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item active mr-lg-4">
                             <a class="nav-link" href="#">HOME <span class="sr-only">(Página atual)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item  mr-lg-4">
                             <a class="nav-link" href="#">QUEM SOMOS</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown mr-lg-4">
                             <a class="nav-link dropdown-toggle" id="dropdownNavBar" data-toggle="dropdown"
                                 class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"
                                 href="#">CONTABILIDADE ESPECIALIZADA</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownNavBar">
-                                <button class="dropdown-item" type="button">Médicos</button>
-                                <button class="dropdown-item" type="button">Serviços</button>
-                                <button class="dropdown-item" type="button">Academia</button>
+                                <button class="dropdown-item h6" type="button"> <i class="fa fa-medkit mr-lg-1"
+                                        aria-hidden="true"></i>&nbsp&nbspMédicos</button>
+                                <button class="dropdown-item h6" type="button"><i class="fa fa-building mr-lg-1"
+                                        aria-hidden="true"></i>&nbsp&nbspServiços</button>
+                                <button class="dropdown-item h6" type="button"><i class="fa fa-bicycle mr-lg-1"
+                                        aria-hidden="true"></i>&nbsp&nbspAcademia</button>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-lg-4">
                             <a class="nav-link" href="#">ORÇAMENTO</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-lg-4">
                             <a class="nav-link" href="#">BLOG</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-lg-4">
                             <a class="nav-link" href="#">CONTATO</a>
                         </li>
                     </ul>
@@ -76,6 +81,42 @@
         </div>
     </div>
 
+    <div id="carouselExampleCaptions" class="carousel slide mt-lg-0" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-none d-md-block" style="position:absolute; top: 23%; left: 14%; color: white; text-align: center;">
+                    <h1><b>Consultoria Gratuita</b></h1>
+                    <p>
+                    <h5>Todas as dúvidas cuidadosamente respondidas por contadores especialistas.</h5>
+                    </p>
+                    <button class="btn btn-warning btn-lg" type="button" style="border-radius: 20px;"> SAIBA MAIS </button>
+                </div>
+                <img src="img/slide01.jpg" class="d-block w-100" alt="Consultoria Gratuita">
+            </div>
+            <div class="carousel-item">
+                <div class="d-none d-md-block" style="position:absolute; top: 23%; left: 32%; color: white; text-align: center;">
+                    <h1><b>Descomplique o seu Negócio</b></h1>
+                    <p>
+                    <h5>Todas as dúvidas cuidadosamente respondidas por contadores especialistas.</h5>
+                    </p>
+                    <button class="btn btn-warning btn-lg" type="button" style="border-radius: 20px;"> SAIBA MAIS </button>
+                </div>
+                <img src="img/slide02.jpeg" class="d-block w-100" alt="Descomplique o seu Negócio">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">ANTERIOR</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">PRÓXIMO</span>
+        </a>
+    </div>
 
     <script>
         $(document).ready(function () {
